@@ -5,21 +5,21 @@
 class Forge < Formula
   desc "Autonomous AI orchestrator for multi-repo development"
   homepage "https://github.com/Robin831/Forge"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Robin831/Forge/releases/download/v0.9.0/forge_0.9.0_darwin_amd64.tar.gz"
-      sha256 "6e8655fae572abd889e8512c5c811579518a6311e1924931cb4f98ef3eaa02ef"
+      url "https://github.com/Robin831/Forge/releases/download/v0.10.0/forge_0.10.0_darwin_amd64.tar.gz"
+      sha256 "eb3929f68e8429ca4fef2d0e7befbf69fefd258f3e3888f88e3c3ab8be5d1d31"
 
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Robin831/Forge/releases/download/v0.9.0/forge_0.9.0_darwin_arm64.tar.gz"
-      sha256 "7f9d9cf3b1c277bc303c171de0a6cf00aba19bae424c4c02c1dcd6ab6de63969"
+      url "https://github.com/Robin831/Forge/releases/download/v0.10.0/forge_0.10.0_darwin_arm64.tar.gz"
+      sha256 "6edc2a01ff7f0235f884d9c6e23ef46f792db08c1c7f363354337cfc590184fa"
 
       define_method(:install) do
         bin.install "forge"
@@ -29,15 +29,15 @@ class Forge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Robin831/Forge/releases/download/v0.9.0/forge_0.9.0_linux_amd64.tar.gz"
-      sha256 "434d573fb4e09bc826466c70308cc74765f3fd5ec451914cae0b1915194cf9a7"
+      url "https://github.com/Robin831/Forge/releases/download/v0.10.0/forge_0.10.0_linux_amd64.tar.gz"
+      sha256 "1b68d60575046d81a764c385ff26df06a7498244a0316a49d46c8a24d4157336"
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Robin831/Forge/releases/download/v0.9.0/forge_0.9.0_linux_arm64.tar.gz"
-      sha256 "b58afb322617ed38f529376be94208be1fee041501f3e92730a921c677c470fc"
+      url "https://github.com/Robin831/Forge/releases/download/v0.10.0/forge_0.10.0_linux_arm64.tar.gz"
+      sha256 "52113a0708ebaedc2cb92b13241eab3f003b6357d94a69eb5683e353c9720955"
       define_method(:install) do
         bin.install "forge"
       end
